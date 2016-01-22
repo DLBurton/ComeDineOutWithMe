@@ -1,0 +1,44 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: BryantRegular;
+  src: url("../../fonts/BryantRegular.ttf");
+}
+/***************************
+ * Global Variables
+ ***************************/
+/***************************
+ * Global Mixins
+ ***************************/
+/***************************
+ * Global Style
+ ***************************/
+/* line 32, ../sass/partials/_base.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 36, ../sass/partials/_base.scss */
+.img-responsive-center {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* line 44, ../sass/partials/_base.scss */
+#debug-info {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  background-color: red;
+  color: black;
+}
+/* line 51, ../sass/partials/_base.scss */
+#debug-info h1 {
+  font-size: 50px;
+}

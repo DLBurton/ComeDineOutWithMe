@@ -1,0 +1,29 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <!--<link href="{% static "common/bower_components/lightbox2/dist/css/lightbox.css" %}" media="screen, projection" rel="stylesheet" type="text/css" />-->
+    <!--<link href="{% static "common/bower_components/ladda/dist/ladda-themeless.min.css" %}" media="screen, projection" rel="stylesheet" type="text/css" />-->
+    <!--<link href="{% static "common/bower_components/chosen/chosen.min.css" %}" media="screen" rel="stylesheet" type="text/css" />-->
+    <!--<link href="{% static "common/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" %}" media="screen" rel="stylesheet" type="text/css" />-->
+    <!--<link href="{% static "common/bower_components/ng-notifications-bar/dist/ngNotificationsBar.min.css" %}" media="screen" rel="stylesheet" type="text/css" />-->
+    <!--<link href="{% static "common/bower_components/angular-spinkit/build/angular-spinkit.min.css" %}" media="screen" rel="stylesheet" type="text/css" />-->
+    <link href="{% static "homepage/stylesheets/screen.css" %}" media="screen, projection" rel="stylesheet" type="text/css" />
+    <base href="/">
+{% endblock %}
+
+
+{% block navbar %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Hello World</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

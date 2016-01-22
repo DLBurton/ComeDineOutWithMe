@@ -1,0 +1,55 @@
+@font-face { font-family: BryantRegular; src: url("../../fonts/BryantRegular.ttf"); }
+
+/***************************
+ * Global Variables
+ ***************************/
+
+$kite-color-yellow: #ffc618;
+$kite-color-dark-blue: #082335;
+
+$kite-base-font-family: 'Open Sans', sans-serif;
+$kite-logo-font-family: BryantRegular, sans-serif;
+$kite-font-family-montserrat: 'Montserrat', sans-serif;
+
+/***************************
+ * Global Mixins
+ ***************************/
+
+@mixin respond-to($media) {
+  @if $media == screen-sm {
+    @media (min-width: 768px) { @content; }
+  } @else if $media == screen-md {
+    @media (min-width: 992px) { @content; }
+  } @else if $media == screen-lg {
+    @media (min-width: 1200px) { @content; }
+  }
+}
+
+/***************************
+ * Global Style
+ ***************************/
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.img-responsive-center {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#debug-info {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  background-color: red;
+  color: black;
+  h1 {
+    font-size: 50px;
+  }
+}
+
